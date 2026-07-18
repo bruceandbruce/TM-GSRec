@@ -9,30 +9,7 @@ from data import CreateDataLoader
 from models import create_model
 from util1.visualizer import Visualizer
 
-# python train.py --lambda_adv 0 --dataroot IXI_short.csv --name G1D20_continue --gpu_ids 1 --model resvit_one --which_model_netG GaussianSR_isbi --which_direction AtoB --lambda_A 100 --dataset_mode aligned2 --norm batch --pool_size 0 --output_nc 1 --input_nc 1 --loadSize 256 --fineSize 256 --niter 1 --niter_decay 50 --save_epoch_freq 1 --checkpoints_dir EXP_checkpoints/ --display_id 0 --pre_trained_transformer 0 --pre_trained_resnet 0 --lr 2e-4 --batchSize 1 --mask G1D20 --continue_train
-# python train.py --lambda_adv 0 --dataroot IXI_short.csv --name G1D20_continue1 --gpu_ids 1 --model resvit_one --which_model_netG GaussianSR_isbi --which_direction AtoB --lambda_A 100 --dataset_mode aligned2 --norm batch --pool_size 0 --output_nc 1 --input_nc 1 --loadSize 256 --fineSize 256 --niter 1 --niter_decay 50 --save_epoch_freq 1 --checkpoints_dir EXP_checkpoints/ --display_id 0 --pre_trained_transformer 0 --pre_trained_resnet 0 --lr 1e-4 --batchSize 1 --mask G1D20 --continue_train
-
-# python train.py --lambda_adv 0 --dataroot IXI_short.csv --name G1D20_continue_L2 --gpu_ids 0 --model resvit_one --which_model_netG GaussianSR_isbi --which_direction AtoB --lambda_A 100 --dataset_mode aligned2 --norm batch --pool_size 0 --output_nc 1 --input_nc 1 --loadSize 256 --fineSize 256 --niter 1 --niter_decay 30 --save_epoch_freq 1 --checkpoints_dir EXP_checkpoints/ --display_id 0 --pre_trained_transformer 0 --pre_trained_resnet 0 --lr 0.5e-4 --batchSize 1 --mask G1D20 --continue_train
-
-# python train.py --lambda_adv 0 --dataroot IXI_short.csv --name G1D20_continue_L2_SSIM_G --gpu_ids 0 --model resvit_one --which_model_netG GaussianSR_isbi --which_direction AtoB --lambda_A 100 --dataset_mode aligned2 --norm batch --pool_size 0 --output_nc 1 --input_nc 1 --loadSize 256 --fineSize 256 --niter 1 --niter_decay 30 --save_epoch_freq 1 --checkpoints_dir EXP_checkpoints/ --display_id 0 --pre_trained_transformer 0 --pre_trained_resnet 0 --lr 0.3e-4 --batchSize 1 --mask G1D20 --continue_train
-
-# python train.py --lambda_adv 0 --dataroot IXI_short.csv --name G1D20_continue1_L2_SSIM_G --gpu_ids 0 --model resvit_one --which_model_netG GaussianSR_isbi --which_direction AtoB --lambda_A 100 --dataset_mode aligned2 --norm batch --pool_size 0 --output_nc 1 --input_nc 1 --loadSize 256 --fineSize 256 --niter 1 --niter_decay 30 --save_epoch_freq 1 --checkpoints_dir EXP_checkpoints/ --display_id 0 --pre_trained_transformer 0 --pre_trained_resnet 0 --lr 0.1e-4 --batchSize 1 --mask G1D20 --continue_train
-
-
-
-
-
-
-
-'''
-pip install ml_collections
-
-resViT
-python3 train_wyz.py --dataroot /home/wyz/Desktop/IXI/IXI_process_scripts/data_ixi_t2_pd.csv --name T2_PD_IXI_resvit_v2 --gpu_ids 0 --model resvit_one --which_model_netG resvit --which_direction AtoB --lambda_A 100 --dataset_mode aligned2 --norm batch --pool_size 0 --output_nc 1 --input_nc 1 --loadSize 256 --fineSize 256 --niter 8 --niter_decay 24 --save_epoch_freq 1 --checkpoints_dir checkpoints/ --display_id 0 --pre_trained_transformer 0 --pre_trained_resnet 0 --lr 1e-3 --batchSize 16
-
-SwinRes
-python3 train_wyz.py --dataroot /home/wyz/Desktop/IXI/IXI_process_scripts/data_ixi_t2_pd.csv --name T2_PD_IXI_swinres_v0 --gpu_ids 0 --model resvit_one --which_model_netG resvit --which_direction AtoB --lambda_A 100 --dataset_mode aligned2 --norm batch --pool_size 0 --output_nc 1 --input_nc 1 --loadSize 256 --fineSize 256 --niter 8 --niter_decay 32 --save_epoch_freq 1 --checkpoints_dir checkpoints/ --display_id 0 --pre_trained_transformer 0 --pre_trained_resnet 0 --lr 1e-3 --batchSize 24 --debug 0
-'''
+# python train.py --lambda_adv 0 --dataroot IXI_short.csv --name G1D20 --gpu_ids 1 --model resvit_one --which_model_netG GaussianSR_isbi --which_direction AtoB --lambda_A 100 --dataset_mode aligned2 --norm batch --pool_size 0 --output_nc 1 --input_nc 1 --loadSize 256 --fineSize 256 --niter 1 --niter_decay 50 --save_epoch_freq 1 --checkpoints_dir EXP_checkpoints/ --display_id 0 --pre_trained_transformer 0 --pre_trained_resnet 0 --lr 2e-4 --batchSize 1 --mask G1D20 --continue_train
 
 def print_log(logger,message):
     print(message, flush=True)
