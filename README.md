@@ -1,5 +1,5 @@
 # Code
-We will make the code publicly available upon acceptance of the paper.(40% ...)
+We will make the code publicly available upon acceptance of the paper.
 # TM-GSRec
 
 IXI Brain T₂ modality Reconstruction
